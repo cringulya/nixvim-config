@@ -5,6 +5,7 @@
     servers = {
       bashls.enable = true;
       clangd = {
+        cmd = [ "clangd" "--clang-tidy" ];
         extraOptions = { CompileFlags = "-std=c++20"; };
         enable = true;
       };
