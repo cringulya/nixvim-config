@@ -148,7 +148,7 @@ return {
       \usepackage{graphicx}
       \usepackage{caption}
       \usepackage{float}
-      \usepackage{subcaption} 
+      \usepackage{subcaption}
       \usepackage{hyperref}
       \usepackage[a4paper,left=15mm,right=15mm,top=30mm,bottom=20mm]{geometry}
       \usepackage{indentfirst}
@@ -159,7 +159,7 @@ return {
       \newtheorem{problem}{Задача}
 
       \newenvironment{solution}
-       {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Решение]}
+       {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Решение]$ $\par\nobreak\ignorespaces}
        {\end{proof}}
 
 
@@ -207,7 +207,7 @@ return {
         basicstyle=\footnotesize,           % the size of the fonts that are used for the code
         numbers=left,                   % where to put the line-numbers
         numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
-        stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+        stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
                                         % will be numbered
         numbersep=5pt,                  % how far the line-numbers are from the code
         backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
