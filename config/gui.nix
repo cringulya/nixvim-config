@@ -1,7 +1,7 @@
 {
   extraConfigLua = ''
     if vim.g.neovide then
-      vim.opt.guifont = { "Iosevka Nerd Font", "h20" }
+      vim.opt.guifont = { "Iosevka Nerd Font" }
       vim.cmd([[
       au VimEnter,VimResume * set guicursor-=a:blinkwait5-blinkon5-blinkoff5
       ]])
