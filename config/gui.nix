@@ -17,7 +17,7 @@
       end)
 
       -- Change scale
-      vim.g.neovide_scale_factor = 1.7
+      vim.g.neovide_scale_factor = 1.5
       local change_scale_factor = function(delta)
         vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
       end
@@ -63,34 +63,16 @@
         vim.keymap.set("v", "<C-v>", '"+P') -- Paste visual mode
         vim.keymap.set("c", "<C-v>", "<C-R>+") -- Paste command mode
         vim.keymap.set("i", "<C-v>", "<c-r>+") -- Paste insert mode
-        vim.api.nvim_set_keymap(
-          "",
-          "<C-v>",
-          "+p<CR>",
-          { noremap = true, silent = true }
-        )
-        vim.api.nvim_set_keymap(
-          "!",
-          "<C-v>",
-          "<C-R>+",
-          { noremap = true, silent = true }
-        )
-        vim.cmd([[ tnoremap <expr> <C-v> "<C-\><C-N>"+pi" ]])
+        -- Allow clipboard copy paste in neovim
+        vim.api.nvim_set_keymap("", "<D-v>", "+p<CR>", { noremap = true, silent
+      = true})
+      vim.api.nvim_set_keymap("!", "<D-v>", "<C-R>+", { noremap = true, silent =
+      true})
+      vim.api.nvim_set_keymap("t", "<D-v>", "<C-R>+", { noremap = true, silent =
+      true})
+      vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent =
+      true})
       end
-
-      -- vim.api.nvim_set_keymap(
-      --   "t",
-      --   "<D-v>",
-      --   "<C-><C-N>"+pi",
-      --   { noremap = true, silent = true }
-      -- )
-
-      vim.api.nvim_set_keymap(
-        "v",
-        "<D-v>",
-        "<C-R>+",
-        { noremap = true, silent = true }
-      )
     end
   '';
 }
