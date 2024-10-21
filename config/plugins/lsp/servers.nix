@@ -9,7 +9,7 @@
         extraOptions = { CompileFlags = "-std=c++20"; };
         enable = true;
       };
-      nil-ls = {
+      nil_ls = {
         enable = true;
         settings.diagnostics.excludedFiles = [ "*" ];
       };
@@ -22,7 +22,7 @@
       };
       pyright.enable = true;
       cmake.enable = true;
-      lua-ls = {
+      lua_ls = {
         enable = true;
         settings.telemetry.enable = false;
       };
