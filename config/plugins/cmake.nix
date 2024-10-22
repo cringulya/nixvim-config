@@ -6,10 +6,14 @@
       cmake_runner = {
         name = "terminal";
         terminal = {
-          split_direction = "horizontal";
-          split_size = 20;
+          split_direction = "vertical";
+          split_size = 40;
           focus = true;
         };
+      };
+      cmake_notifications = {
+        runner = { enabled = false; };
+        executor = { enabled = false; };
       };
     };
   };
