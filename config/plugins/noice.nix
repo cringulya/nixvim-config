@@ -23,7 +23,7 @@
         filter = {
           event = "msg_show";
           kind = "lua_error";
-          find = "cmake-tools";
+          find = "";
         };
         opts = { skip = true; };
       }
