@@ -61,11 +61,11 @@
           )
           vim.cmd([[ tnoremap <expr> <D-v> "<C-\><C-N>"+pi" ]])
         end
-        vim.keymap.set("n", "<C-=>", function()
-          change_scale_factor(1.10)
+        vim.keymap.set("n", "<C-+>", function()
+          change_scale_factor(1.20)
         end)
-        vim.keymap.set("n", "<C-->", function()
-          change_scale_factor(1 / 1.10)
+        vim.keymap.set("n", "<C-_>", function()
+          change_scale_factor(1 / 1.20)
         end)
     end
   '';
