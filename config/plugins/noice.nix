@@ -22,8 +22,8 @@
       {
         filter = {
           event = "msg_show";
-          kind = "";
-          find = "cmake-tools.nvim";
+          kind = "lua_error";
+          find = "cmake-tools";
         };
         opts = { skip = true; };
       }
