@@ -10,7 +10,7 @@ local fmta = require('luasnip.extras.fmt').fmta
 local rep = require('luasnip.extras').rep
 
 return {
-  s({ trig = 'beg', dscr = 'contest template' }, {
+  s({ trig = 'contest', dscr = 'contest template' }, {
     t({
       '#include <iostream>',
       '#include <algorithm>',

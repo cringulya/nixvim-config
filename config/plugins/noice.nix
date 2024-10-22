@@ -10,14 +10,25 @@
     };
     cmdline.view = "cmdline";
 
-    routes = [{
-      filter = {
-        event = "msg_show";
-        kind = "";
-        find = "written";
-      };
-      opts = { skip = true; };
-    }];
+    routes = [
+      {
+        filter = {
+          event = "msg_show";
+          kind = "";
+          find = "written";
+        };
+        opts = { skip = true; };
+      }
+      {
+        filter = {
+          event = "msg_show";
+          kind = "";
+          find = "cmake-tools.nvim";
+        };
+        opts = { skip = true; };
+      }
+
+    ];
 
     lsp.override = {
       "vim.lsp.util.convert_input_to_markdown_lines" = true;
