@@ -35,10 +35,10 @@
     vim-surround.enable = true;
     tmux-navigator.enable = true;
     web-devicons.enable = true;
-    neoscroll = {
-      enable = true;
-      settings.hide_cursor = false;
-    };
+    # neoscroll = {
+    #   enable = true;
+    #   settings.hide_cursor = false;
+    # };
     notify.enable = true;
     virt-column.enable = true;
     nvim-colorizer.enable = true;
