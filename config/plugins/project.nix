@@ -11,7 +11,7 @@
     enableTelescope = true;
     settings = {
       show_hidden = false;
-      detectionMethods = [ "pattern" "lsp" ];
+      detectionMethods = [ "pattern" ];
       ignore_lsp = [ "clangd" ];
       patterns = [
         ".git"
