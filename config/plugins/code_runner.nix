@@ -39,6 +39,7 @@
         julia = 'julia $dir/$fileName',
         rust = 'cd $dir && rustc $fileName && $dir/$fileNameWithoutExt',
         cpp = 'cd $dir && mkdir -p build && g++ -std=c++20 -Wall -Wextra ' ..
+              '-fsanitize=address' ..
               '-Wshadow -D KEKIS -O2 -o ' ..
               './build/$fileNameWithoutExt $fileName ' ..
               '&& ./build/$fileNameWithoutExt',
