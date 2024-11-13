@@ -13,11 +13,24 @@
           vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
         end
 
+        vim.keymap.set("n", "<C-+>", function()
+          change_scale_factor(1.20)
+        end)
+        vim.keymap.set("n", "<C-_>", function()
+          change_scale_factor(1 / 1.20)
+        end)
+
         vim.keymap.set('v', '<c-c>', '"+y') -- Copy
         vim.keymap.set('n', '<c-v>', '"+P') -- Paste normal mode
         vim.keymap.set('v', '<c-v>', '"+P') -- Paste visual mode
         vim.keymap.set('c', '<c-v>', '<C-R>+') -- Paste command mode
         vim.keymap.set('i', '<c-v>', '<ESC>l"+Pli') -- Paste insert mode
+
+        vim.api.nvim_set_keymap("", "<C-v>", "+p<CR>", { noremap = true, silent = true})
+        vim.api.nvim_set_keymap("!", "<C-v>", "<C-R>+", { noremap = true, silent = true})
+        vim.api.nvim_set_keymap("t", "<C-v>", "<C-R>+", { noremap = true, silent = true})
+        vim.api.nvim_set_keymap("v", "<C-v>", "<C-R>+", { noremap = true, silent = true})
+
 
         if vim.fn.has("macunix") then
           vim.g.neovide_input_macos_alt_is_meta = false
@@ -51,12 +64,6 @@
           )
           vim.cmd([[ tnoremap <expr> <D-v> "<C-\><C-N>"+pi" ]])
         end
-        vim.keymap.set("n", "<C-+>", function()
-          change_scale_factor(1.20)
-        end)
-        vim.keymap.set("n", "<C-_>", function()
-          change_scale_factor(1 / 1.20)
-        end)
     end
   '';
 }
