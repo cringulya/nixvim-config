@@ -11,11 +11,10 @@
     enableTelescope = true;
     settings = {
       show_hidden = false;
-      detectionMethods = [ "pattern" ];
-      ignore_lsp = [ "clangd" ];
+      detectionMethods = [ "lsp" "pattern" ];
+      ignore_lsp = [ "clangd" "nil_ls" ];
       patterns = [
         ".git"
-        ".vscode"
         "build"
         ">polykek"
         ">sandbox"
@@ -26,11 +25,11 @@
         ".hg"
         ".bzr"
         ".svn"
+        ">.config"
         "Makefile"
         "package.json"
         ".stylua.toml"
         "requirements.txt"
-        "main.py"
         "neovim.json"
         "flake.nix"
       ];

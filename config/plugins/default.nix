@@ -22,7 +22,8 @@
     ./neorg.nix
     ./noice.nix
     ./notify.nix
-    ./nvim-tree.nix
+    # ./nvim-tree.nix
+    ./neo-tree.nix
     ./project.nix
     ./tabout.nix
     ./telescope.nix
