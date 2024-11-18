@@ -19,7 +19,7 @@
     ./matchup.nix
     ./navic.nix
     ./neogit.nix
-    ./neorg.nix
+    # ./neorg.nix
     ./noice.nix
     ./notify.nix
     # ./nvim-tree.nix
