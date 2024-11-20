@@ -19,11 +19,11 @@
     ./matchup.nix
     ./navic.nix
     ./neogit.nix
-    # ./neorg.nix
+    ./neorg.nix
     ./noice.nix
     ./notify.nix
-    # ./nvim-tree.nix
-    ./neo-tree.nix
+    ./nvim-tree.nix
+    # ./neo-tree.nix
     ./project.nix
     ./tabout.nix
     ./telescope.nix
