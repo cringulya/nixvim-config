@@ -36,6 +36,14 @@ end
 
 return {
   s(
+    { trig = ';d' },
+    { t('\\cdot') },
+    { condition = env.in_mathzone, show_condition = env.in_mathzone }
+  ),
+
+  s({ trig = 'mbb' }, { t('\\mathbb{'), i(1), t('}') }),
+
+  s(
     { trig = ';ld' },
     { t('\\ldotp') },
     { condition = env.in_mathzone, show_condition = env.in_mathzone }
@@ -56,7 +64,7 @@ return {
     show_condition = env.in_mathzone,
   }),
 
-  s({ trig = ';d' }, { t('\\delta') }, {
+  s({ trig = ';del' }, { t('\\delta') }, {
     condition = env.in_mathzone,
     show_condition = env.in_mathzone,
   }),

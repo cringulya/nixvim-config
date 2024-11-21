@@ -199,9 +199,9 @@ return {
     { trig = 'eq', dscr = 'A LaTeX equation environment' },
     fmta( -- The snippet code actually looks like the equation environment it produces.
       [[
-      \begin{equation}
+      \begin{equation*}
         <>
-      \end{equation}
+      \end{equation*}
       ]],
       -- The insert node is placed in the <> angle brackets
       { i(0) },
