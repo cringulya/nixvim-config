@@ -23,6 +23,12 @@
     }
 
     {
+      mode = "t";
+      key = "<c-v>";
+      action = ''<c-\><c-n>"+pi'';
+    }
+
+    {
       mode = "n";
       key = "<esc>";
       action = "<cmd>Trouble qflist close<cr><cmd>NvimTreeClose<cr>";
