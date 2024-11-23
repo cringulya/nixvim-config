@@ -23,6 +23,7 @@
     ./noice.nix
     ./notify.nix
     ./nvim-tree.nix
+    ./orgmode.nix
     # ./neo-tree.nix
     ./project.nix
     ./tabout.nix
@@ -36,7 +37,6 @@
     vim-surround.enable = true;
     tmux-navigator.enable = true;
     web-devicons.enable = true;
-    orgmode.enable = true;
     neoscroll = {
       enable = true;
       settings.hide_cursor = false;
