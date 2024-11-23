@@ -41,6 +41,7 @@
             name = "neorg";
             max_item_count = 4;
           }
+          { name = "orgmode"; }
           {
             name = "path";
             max_item_count = 4;
