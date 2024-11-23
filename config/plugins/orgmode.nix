@@ -22,7 +22,6 @@
     luaConfig.pre =
       #lua
       ''
-        require('org-bullets').setup()
         require('orgmode').setup({
             settings = {
               org_agenda_files = "~/org/**/*",
@@ -32,6 +31,7 @@
                 prefix = '<leader>n'
             },
         })
+        require('org-bullets').setup()
       '';
   };
 
