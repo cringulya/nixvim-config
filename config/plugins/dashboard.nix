@@ -93,7 +93,7 @@
             desc_hl = "group";
             key = "n";
             key_hl = "group";
-            action = "Telescope neorg switch_workspace";
+            action = "Telescope find_files search_dirs=~/org";
           }
         ];
 

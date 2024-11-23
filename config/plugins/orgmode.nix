@@ -39,8 +39,22 @@
     event = [ "FileType" ];
     pattern = [ "org" ];
     callback.__raw = ''
-      function() vim.opt_local.concealcursor = "nc" -- vim.opt_local.wrap = false
-        vim.opt.concealcursor = 'nc' vim.keymap.set('i', '<S-CR>', '<cmd>lua require("orgmode").action("org_mappings.meta_return")<CR>', { silent = true,
-            buffer = true, }) end '';
+      function()
+        vim.opt_local.concealcursor = "nc"
+        -- vim.opt_local.wrap = false
+        vim.opt.concealcursor = 'nc'
+
+        vim.keymap.set('i', '<S-CR>',
+          '<cmd>lua require("orgmode").action("org_mappings.meta_return")<CR>',
+          { silent = true, buffer = true, })
+      end
+    '';
+  }];
+
+  keymaps = [{
+    mode = "n";
+    key = "<leader>nf";
+    action = "<cmd>Telescope find_files search_dirs=~/org<cr>";
+    options.desc = "org find";
   }];
 }
