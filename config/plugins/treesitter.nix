@@ -100,7 +100,7 @@
     };
 
     treesitter-context = {
-      enable = true;
+      enable = false;
       settings = { max_lines = 2; };
     };
 
